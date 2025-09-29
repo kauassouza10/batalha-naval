@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.tabuleiros {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(5, 40px); /* 5 colunas */
+  grid-template-rows: repeat(5, 40px);   /* 5 linhas */
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.celula {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  border: 1px solid #888;
+  cursor: pointer;
+}
+
+.celula:hover {
+  background: #bbb;
+}
+
+.navio {
+  background: #444; /* Mostra os navios do jogador */
+}
+
+.acerto {
+  background: red;
+}
+
+.erro {
+  background: white;
+}
+
+.controles {
+  margin: 20px;
+}
+
+.registro {
+  margin: 20px auto;
+  width: 300px;
+  height: 150px;
+  overflow-y: auto;
+  border: 1px solid #999;
+  background: #fff;
+  padding: 10px;
+  text-align: left;
+}

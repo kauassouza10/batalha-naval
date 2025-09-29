@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Batalha Naval</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <h1>Batalha Naval 5x5</h1>
+  <p>Clique em uma célula do tabuleiro inimigo para atirar.</p>
+
+  <div class="tabuleiros">
+    <div class="tabuleiro">
+      <h2>Seu Tabuleiro</h2>
+      <div id="tabuleiroJogador" class="grade"></div>
+    </div>
+
+    <div class="tabuleiro">
+      <h2>Tabuleiro Inimigo</h2>
+      <div id="tabuleiroInimigo" class="grade"></div>
+      <p id="tirosRestantes">Tiros restantes: 10</p>
+    </div>
+  </div>
+
+  <div class="controles">
+    <label for="entradaManual">Atirar (ex: A1 ou "2 3"):</label>
+    <input type="text" id="entradaManual" placeholder="A1 ou 2 3">
+    <button id="botaoAtirar">Atirar</button>
+    <button id="botaoReiniciar">Reiniciar</button>
+  </div>
+
+  <h3>Registro de jogadas</h3>
+  <div id="log" class="registro"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
